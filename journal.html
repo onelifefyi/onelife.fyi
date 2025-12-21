@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal - onelife.fyi</title>
+    <style>
+      :root {
+        --bg: #fffcf9;
+        --text: #2a2a2a;
+        --meta: #999;
+        --font-body: "Georgia", "Times New Roman", serif;
+        --font-mono: "SF Mono", "Monaco", "Courier New", monospace;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: var(--font-body);
+        line-height: 1.5;
+        /* Changed for list view: align to top */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 100px 40px; /* Top padding creates breathing room */
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .site-id {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--meta);
+        margin-bottom: 40px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+      }
+      .site-id:hover {
+        color: var(--text);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin: 0 0 60px 0;
+        letter-spacing: -0.5px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      li {
+        margin-bottom: 30px;
+      }
+
+      .post-link {
+        text-decoration: none;
+        display: block;
+      }
+
+      .post-title {
+        font-size: 1.5rem;
+        color: var(--text);
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .post-date {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--meta);
+      }
+
+      .post-link:hover .post-title {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="site-id">← onelife.fyi</a>
+
+    <h1>Journal</h1>
+
+    <ul>
+      <li>
+        <a href="journal/20251221_helloWorld.html" class="post-link">
+          <span class="post-title">Hello World</span>
+          <span class="post-date">2025-12-21</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
