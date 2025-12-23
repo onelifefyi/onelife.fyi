@@ -4,94 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World - onelife.fyi</title>
-    <style>
-      :root {
-        --bg: #fffcf9;
-        --text: #2a2a2a;
-        --meta: #999;
-        --font-body: "Georgia", "Times New Roman", serif;
-        --font-mono: "SF Mono", "Monaco", "Courier New", monospace;
-      }
-
-      body {
-        background-color: var(--bg);
-        color: var(--text);
-        font-family: var(--font-body);
-        line-height: 1.6;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 100px 40px;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      a {
-        color: var(--text);
-        text-decoration: underline;
-        text-decoration-color: var(--meta);
-      }
-      a:hover {
-        text-decoration-color: var(--text);
-      }
-
-      .nav-link {
-        font-family: var(--font-mono);
-        font-size: 0.85rem;
-        color: var(--meta);
-        text-decoration: none;
-        margin-bottom: 40px;
-        display: block;
-      }
-      .nav-link:hover {
-        color: var(--text);
-      }
-
-      header {
-        margin-bottom: 40px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        font-weight: normal;
-        margin: 0 0 10px 0;
-        letter-spacing: -0.5px;
-      }
-
-      .meta-date {
-        font-family: var(--font-mono);
-        font-size: 0.85rem;
-        color: var(--meta);
-      }
-
-      /* Content Styling */
-      article p {
-        font-size: 1.15rem;
-        margin-bottom: 1.5rem;
-        color: #333;
-      }
-
-      /* List Styling */
-      article ul {
-        margin-bottom: 1.5rem;
-        padding-left: 20px;
-      }
-      article li {
-        font-size: 1.15rem;
-        margin-bottom: 0.5rem;
-        color: #333;
-      }
-
-      img {
-        max-width: 100%;
-        margin: 20px 0;
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <a href="../journal.html" class="nav-link">← Journal</a>
+    
+    <div class="top-bar">
+      <a href="../journal.html" class="site-id">← Journal</a>
+      <button id="theme-toggle" class="theme-toggle">Dark</button>
+    </div>
 
     <header>
       <h1>Hello, World!</h1>
@@ -103,19 +23,18 @@
 
       <p>I'm Apoorv. Just a guy, figuring out life.</p>
 
-      <p>This is mostly for myself.... I'll start writing.</p>
+      <p>This is mostly for myself... I'll start writing.</p>
 
       <p>
         I built this site. I think it's pretty cool, the hybrid setup with
         GitHub Pages for onelife.fyi and my local machine for apps:
-        <a href="https://console.onelife.fyi">terminal</a>
-        and
+        <a href="https://console.onelife.fyi">terminal</a> and
         <a href="https://code.onelife.fyi">code editor</a>, so far.
       </p>
 
       <p>
         I'm on a two week vacation right now, thought I should get this site
-        going (I have had this domain for close to 2 years now, lol)
+        going (I have had this domain for close to 2 years now, lol).
       </p>
 
       <p>Some of the things I have to do today:</p>
@@ -138,5 +57,7 @@
         styling, which feels boilerplate), I'm glad that this llm made it easy.
       </p>
     </article>
+
+    <script src="../theme.js"></script>
   </body>
 </html>
