@@ -1,0 +1,23 @@
+body {
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #c9d1d9;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+a {
+  color: #0969da;
+}
+
+.dark-theme a {
+  color: #58a6ff;
+}
