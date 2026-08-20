@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Back Again - onelife.fyi</title>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body class="dark-theme">
-    
-    <div>
-      <button id="theme-toggle">dark/light</button>
-      <a href="../journal.html">← Journal</a>
-    </div>
 
-    <header>
-      <h1>Back Again</h1>
-      <div>August 19, 2026</div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Back Again - onelife.fyi</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
 
-    <article>
-      <p>I'm back again, hoping to continue working on this site and documenting my journey. Working from my laptop now, trying to keep things simple.</p>
-      
-      <p>A quick update: <a href="https://console.onelife.fyi">console.onelife.fyi</a> and <a href="https://code.onelife.fyi">code.onelife.fyi</a> are offline now. RIP to the Mac Mini.</p>
-      
-      <p>I also removed the cool style I added using Gemini and went back to pure HTML for now.</p>
+<body class="dark-theme">
 
-      <p>I don't know what makes the entire web-dev stuff so scary? Every time I've used a web framework, I get intimidated by so many unknown scripts being added to my project.</p>
+  <div>
+    <button id="theme-toggle">dark/light</button>
+    <a href="../journal.html">← Journal</a>
+  </div>
 
-      <p>But then again, that's the exact same for any backend work that I do... adding random packages and black-box code. But for some reason, the backend stuff just doesn't scare me. Who knows.</p>
-    </article>
+  <header>
+    <h1>Back Again</h1>
+    <div>August 19, 2026</div>
+  </header>
 
-    <script src="../script.js"></script>
-  </body>
+  <article>
+    <p>I'm back again, hoping to continue working on this site and documenting my journey. Working from my laptop now,
+      trying to keep things simple.</p>
+
+    <p>A quick update: <a href="https://console.onelife.fyi">console.onelife.fyi</a> and <a
+        href="https://code.onelife.fyi">code.onelife.fyi</a> are offline now. RIP to the Mac Mini.</p>
+
+    <p>I also removed the cool style I added using Gemini and went back to pure HTML for now.</p>
+
+    <p>I don't know what makes the entire web-dev stuff so scary? Every time I've used a web framework, I get
+      intimidated by so many unknown scripts being added to my project.</p>
+
+    <p>But then again, that's the exact same for any backend work that I do... adding random packages and black-box
+      code. But for some reason, the backend stuff just doesn't scare me. Who knows.</p>
+
+    <p>Even though I want to keep things minimal, I just couldn't stand the bright white background. So, I built a dark
+      mode toggle. It was a fun challenge, I learned how CSS classes can override default styles, and did some actual JS
+      work.</p>
+
+    <p>It's pretty cool to learn that a webpage is just a DOM (strange name) tree. With JS, you can grab specific
+      objects off that tree, change their state, or ask them to "listen" for events, and bam, call a function when that
+      happens.</p>
+
+    <p>The final thing was local browser storage. I hated that every time I went to a new page, it kept forgetting my
+      choice and switching back to the default theme. Turns out you can have a browser based storage, and can read/write
+      to that.. pretty cool.</p>
+
+    <p>Excited for what's next!!</p>
+  </article>
+
+  <script src="../script.js"></script>
+</body>
+
 </html>
